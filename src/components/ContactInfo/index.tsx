@@ -28,33 +28,21 @@ const iconStyles = {
   color: "white",
 };
 
+const contactData = [
+  { icon: AiFillGithub, link: process.env.REACT_APP_GITHUB_PROFILE },
+  { icon: AiFillLinkedin, link: process.env.REACT_APP_LINKEDIN_PROFILE },
+  { icon: AiFillMail, link: process.env.REACT_APP_EMAIL_ADDRESS },
+  { icon: AiFillFacebook, link: process.env.REACT_APP_FACEBOOK_PROFILE },
+];
+
 const ContactInfo = () => {
   return (
     <ContactsContainer>
-      <Link
-        href={process.env.REACT_APP_GITHUB_PROFILE}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <AiFillGithub style={iconStyles} />
-      </Link>
-      <Link
-        href={process.env.REACT_APP_LINKEDIN_PROFILE}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <AiFillLinkedin style={iconStyles} />
-      </Link>
-      <Link href={`mailto:${process.env.REACT_APP_EMAIL_ADDRESS}`}>
-        <AiFillMail style={iconStyles} />
-      </Link>
-      <Link
-        href={process.env.REACT_APP_FACEBOOK_PROFILE}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <AiFillFacebook style={iconStyles} />
-      </Link>
+      {contactData.map((item) => (
+        <Link href={item.link} target="_blank" rel="noopener noreferrer">
+          <item.icon style={iconStyles} />
+        </Link>
+      ))}
     </ContactsContainer>
   );
 };

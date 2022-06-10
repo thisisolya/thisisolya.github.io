@@ -14,7 +14,7 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-const MainPage = () => {
+const HomePage = () => {
   return (
     <Container>
       <Name />
@@ -24,4 +24,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default HomePage;

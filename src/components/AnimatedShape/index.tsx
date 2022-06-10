@@ -22,13 +22,12 @@ declare global {
 }
 
 const ShapeContaner = styled.div`
-  align-items: center;
-  display: flex;
+  align-items: center; 
   flex: 1;
   canvas {
     background-color: black;
     height: 60vh;
-    max-width: 90vw;
+    width: 70vw;
   }
 `;
 
@@ -51,7 +50,7 @@ const CameraControls = () => {
 
 const Knot = () => {
   const mesh = React.useRef<any>();
-  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.x += 0.01));
+  useFrame(() => mesh.current.rotation.x = mesh.current.rotation.x += 0.01);
   return (
     <mesh ref={mesh}>
       <torusKnotBufferGeometry args={[1, 0.4, 250, 50]} />
