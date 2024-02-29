@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import styled from "styled-components";
 
 type Props = {
@@ -12,13 +12,13 @@ const Paragraph = styled.div<Props>`
   text-transform: ${(props) => props.size === "large" && "uppercase"};
 `;
 
-const Name = () => {
+function Name() {
   return (
     <>
       <Paragraph size="large">Olga Pinchuk</Paragraph>
       <Paragraph size="small">frontend developer</Paragraph>
     </>
   );
-};
+}
 
 export default Name;

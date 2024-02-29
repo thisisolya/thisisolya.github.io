@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  AiFillFacebook,
+  AiOutlineFile,
   AiFillGithub,
-  AiFillLinkedin,
-  AiFillMail,
+  AiOutlineLinkedin,
+  AiOutlineMail,
 } from "react-icons/ai";
 
 const ContactsContainer = styled.div`
@@ -22,20 +22,20 @@ const Link = styled.a`
 `;
 
 const iconStyles = {
-  height: "30px",
-  margin: "15px",
+  height: "25px",
+  margin: "10px",
   width: "30px",
   color: "white",
 };
 
 const contactData = [
+  { icon: AiOutlineFile, link: process.env.REACT_APP_CV_LINK },
   { icon: AiFillGithub, link: process.env.REACT_APP_GITHUB_PROFILE },
-  { icon: AiFillLinkedin, link: process.env.REACT_APP_LINKEDIN_PROFILE },
-  { icon: AiFillMail, link: process.env.REACT_APP_EMAIL_ADDRESS },
-  { icon: AiFillFacebook, link: process.env.REACT_APP_FACEBOOK_PROFILE },
+  { icon: AiOutlineLinkedin, link: process.env.REACT_APP_LINKEDIN_PROFILE },
+  { icon: AiOutlineMail, link: process.env.REACT_APP_EMAIL_ADDRESS },
 ];
 
-const ContactInfo = () => {
+function ContactInfo() {
   return (
     <ContactsContainer>
       {contactData.map((item) => (
@@ -45,6 +45,6 @@ const ContactInfo = () => {
       ))}
     </ContactsContainer>
   );
-};
+}
 
 export default ContactInfo;
