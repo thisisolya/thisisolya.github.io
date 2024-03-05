@@ -14,7 +14,7 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-function HomePage() {
+const HomePage: React.FC = () => {
   return (
     <Container>
       <Name />
@@ -22,6 +22,6 @@ function HomePage() {
       <ContactInfo />
     </Container>
   );
-}
+};
 
 export default HomePage;

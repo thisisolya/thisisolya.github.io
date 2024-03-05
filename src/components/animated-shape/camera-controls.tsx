@@ -2,10 +2,12 @@ import React from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-function CameraControls() {
+const CameraControls: React.FC = () => {
   const { camera, gl } = useThree();
-  const controls = React.useRef<OrbitControls | null>(null);
+  const controls = React.useRef<OrbitControls>(null);
+
   useFrame(() => controls.current && controls.current.update());
+
   return (
     <orbitControls
       ref={controls}
@@ -17,6 +19,6 @@ function CameraControls() {
       minPolarAngle={0}
     />
   );
-}
+};
 
 export default CameraControls;

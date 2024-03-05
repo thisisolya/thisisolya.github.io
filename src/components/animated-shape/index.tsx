@@ -29,7 +29,7 @@ declare global {
   }
 }
 
-function AnimatedShape() {
+const AnimatedShape: React.FC = () => {
   return (
     <ShapeContainer>
       <Canvas camera={{ position: [1, 5, 1], fov: 70 }}>
@@ -39,6 +39,6 @@ function AnimatedShape() {
       </Canvas>
     </ShapeContainer>
   );
-}
+};
 
 export default AnimatedShape;
