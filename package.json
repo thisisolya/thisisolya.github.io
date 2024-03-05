@@ -1,7 +1,7 @@
 {
   "name": "thisisolya-website",
   "version": "1.0.0",
-  "homepage": "https://thisisolya.github.io/thisisolya.github.io",
+  "homepage": "https://thisisolya.github.io",
   "private": true,
   "dependencies": {
     "@react-three/fiber": "^8.0.12",
