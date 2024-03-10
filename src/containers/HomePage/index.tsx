@@ -3,15 +3,19 @@ import styled from "styled-components";
 import AnimatedShape from "../../components/animated-shape";
 import ContactInfo from "../../components/contact-info";
 import Name from "../../components/name";
+import { NavLink } from "react-router-dom";
 
 const Container = styled.div`
   align-items: center;
-  background: black;
-  color: white;
   display: flex;
   flex-direction: column;
-  font-family: "Courier New", monospace;
-  height: 100vh;
+  min-height: 100vh;
+
+  a {
+    text-decoration: none;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
 `;
 
 const HomePage: React.FC = () => {
@@ -20,6 +24,7 @@ const HomePage: React.FC = () => {
       <Name />
       <AnimatedShape />
       <ContactInfo />
+      <NavLink to="legal">legal information / Impressum</NavLink>
     </Container>
   );
 };

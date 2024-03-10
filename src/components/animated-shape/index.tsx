@@ -10,7 +10,6 @@ const ShapeContainer = styled.div`
   align-items: center;
   flex: 1;
   canvas {
-    background-color: black;
     height: 60vh;
     width: 100%;
   }

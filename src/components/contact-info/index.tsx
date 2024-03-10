@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { GitHub, Linkedin, FileText as CV, Mail } from 'react-feather';
-
+import { GitHub, Linkedin, FileText as CV, Mail } from "react-feather";
 
 const ContactsContainer = styled.ul`
   display: flex;
@@ -16,14 +15,13 @@ const IconWrapper = styled.li`
   transition: 0.5s;
   &: hover {
     transform: scale(1.5);
-    transition: 1s;
     transition: 0.5s;
   }
 `;
 
 const iconStyles = {
   height: "1.25rem",
-  margin: "0.5rem",
+  margin: "0.75rem",
   color: "white",
 };
 
