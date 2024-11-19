@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import AnimatedShape from "../../components/animated-shape";
-import ContactInfo from "../../components/contact-info";
-import Name from "../../components/name";
-import PageContainer from "../../components/page-container";
+import AnimatedShape from "../../components/animated-shape/index";
+import ContactInfo from "../../components/contact-info/index";
+import Name from "../../components/name/index";
+import PageContainer from "../../components/page-container/index";
 
 const HomePage: React.FC = () => {
   return (
