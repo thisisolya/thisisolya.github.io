@@ -4,7 +4,6 @@ import { GitHub, Linkedin, FileText as CV, Mail } from "react-feather";
 
 const ContactsContainer = styled.ul`
   display: flex;
-  padding-bottom: 50px;
   justify-content: space-evenly;
   list-style: none;
 `;
@@ -13,6 +12,7 @@ const IconWrapper = styled.li`
   margin: 0;
   padding: 0;
   transition: 0.5s;
+  
   &: hover {
     transform: scale(1.5);
     transition: 0.5s;

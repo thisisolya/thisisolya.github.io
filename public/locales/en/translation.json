@@ -1,0 +1,21 @@
+{
+    "legal": {
+        "heading": "Legal information",
+        "contactInfo": {
+            "heading": "Contact info"
+        },
+        "disclaimer": {
+            "heading": "Disclaimer",
+            "body": "This website serves as a personal portfolio and CV platform for Olga Pinchuk. The information provided on this website is for informational purposes only. While every effort is made to keep the information accurate and up-to-date, Olga Pinchuk makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information contained on this website. Any reliance you place on such information is therefore strictly at your own risk."
+        },
+        "copyrightNotice": {
+            "heading": "Copyright Notice",
+            "body": "All content, including text, images, and other multimedia elements, on this website is the property of Olga Pinchuk unless otherwise stated. Unauthorized use and/or duplication of this material without express and written permission from Olga Pinchuk is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Olga Pinchuk with appropriate and specific direction to the original content."
+        },
+        "dataProtection": {
+            "heading": "Data Protection and Privacy Policy",
+            "body": "This website does not collect any personal data from visitors unless explicitly provided through contact forms or other means. Any personal information provided will be used solely for the purpose of responding to inquiries or providing requested services and will not be shared with third parties without consent."
+        },
+        "navigation": "back to homepage"
+    }
+}

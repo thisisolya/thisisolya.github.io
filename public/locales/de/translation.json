@@ -1,0 +1,21 @@
+{
+    "legal": {
+        "heading": "Rechtliche Informationen",
+        "contactInfo": {
+            "heading": "Kontaktdaten"
+        },
+        "disclaimer": {
+            "heading": "Haftungsausschluss",
+            "body": "Diese Website dient als persönliches Portfolio und Lebenslaufplattform für Olga Pinchuk. Die auf dieser Website bereitgestellten Informationen dienen nur zu Informationszwecken. Obwohl alle Anstrengungen unternommen werden, um die Informationen genau und aktuell zu halten, macht Olga Pinchuk keine Zusicherungen oder Gewährleistungen jeglicher Art, ausdrücklich oder implizit, hinsichtlich der Vollständigkeit, Richtigkeit, Zuverlässigkeit, Eignung oder Verfügbarkeit der auf dieser Website enthaltenen Informationen. Jegliches Vertrauen, das Sie in solche Informationen setzen, geschieht daher ausschließlich auf eigenes Risiko."
+        },
+        "copyrightNotice": {
+            "heading": "Urheberrechtshinweis",
+            "body": "Alle Inhalte, einschließlich Texte, Bilder und andere multimediale Elemente, auf dieser Website sind Eigentum von Olga Pinchuk, sofern nicht anders angegeben. Eine unbefugte Nutzung und/oder Vervielfältigung dieses Materials ohne ausdrückliche und schriftliche Genehmigung von Olga Pinchuk ist strengstens untersagt. Auszüge und Links dürfen verwendet werden, vorausgesetzt, dass Olga Pinchuk mit angemessener und spezifischer Verweisung auf den ursprünglichen Inhalt klar und deutlich genannt wird."
+        },
+        "dataProtection": {
+            "heading": "Datenschutzrichtlinie",
+            "body": "Diese Website erhebt keine personenbezogenen Daten von Besuchern, es sei denn, sie werden ausdrücklich durch Kontaktformulare oder andere Mittel bereitgestellt. Alle bereitgestellten persönlichen Informationen werden ausschließlich für den Zweck der Beantwortung von Anfragen oder der Bereitstellung angeforderter Dienstleistungen verwendet und ohne Zustimmung nicht an Dritte weitergegeben."
+        },
+        "navigation": "zurück zur Startseite"
+    }
+}
