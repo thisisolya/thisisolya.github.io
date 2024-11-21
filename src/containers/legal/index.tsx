@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Home } from "react-feather";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import languagesList from "../../utils/languages-list";
-import PageContainer from "../../components/page-container/index";
+import languagesList from "../../utils/languages-list"; 
+import PageContainer from "../../components/page-container";
 
 
 const Navigation = styled(NavLink)`

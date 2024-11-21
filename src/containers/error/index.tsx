@@ -1,6 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import PageContainer from "../../components/page-container/index";
+import { NavLink } from "react-router-dom"; 
+import PageContainer from "../../components/page-container";
 
 const Error = () => {
   return (
