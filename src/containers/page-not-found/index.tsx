@@ -5,7 +5,7 @@ import MulticoloredText from "../../components/multicolored-text";
 
 function PageNotFound(): React.ReactElement {
   return (
-    <PageContainer $centeredHorizontally $centeredVertically>
+    <PageContainer $centeredHorizontally $centeredVertically $height={500}>
       this page doesn's seem to exist...
       <nav>
         <NavLink to="/">

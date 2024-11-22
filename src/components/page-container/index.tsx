@@ -7,9 +7,9 @@ const PageContainer = styled.main<{
 }>`
   display: flex;
   flex-direction: column;
-  min-height: ${({ $height }) => ($height ? `${$height}px` : "80vh")};
+  min-height: ${({ $height }) => ($height ? `${$height}px` : "100%")};
   height: 100%;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   padding: ${({ $centeredHorizontally }) => $centeredHorizontally ? "0" : "2rem"};
   justify-content: ${({ $centeredHorizontally }) => $centeredHorizontally ? "center" : "flex-start"};
@@ -24,7 +24,7 @@ const PageContainer = styled.main<{
     cursor: pointer;
     margin-bottom: 10px;
     transition: transform 0.3s ease;
-    transform-origin: center;
+    transform-origin: left;
 
     &:hover {
       transform: scale(1.1);
@@ -33,6 +33,7 @@ const PageContainer = styled.main<{
 
   .linkToLegalPage {
     font-size: 0.6rem;
+    transform-origin: center;
   }
 `;
 

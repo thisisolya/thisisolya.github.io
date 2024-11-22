@@ -7,8 +7,12 @@ import CameraControls from "./camera-controls";
 import Knot from "./knot";
 
 const ShapeContainer = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
   align-items: center;
   width: 100%;
+  max-width: 1024px;
 
   canvas {
     height: 100%;
