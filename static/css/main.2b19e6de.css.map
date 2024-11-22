@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.2b19e6de.css","mappings":"AAAA,EAIE,qBAAuB,CADvB,qBAAsB,CAEtB,UAAY,CACZ,iCAAqC,CALrC,QAAS,CACT,SAKF","sources":["style.css"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  background-color: black;\n  color: white;\n  font-family: \"Courier New\", monospace;\n}\n"],"names":[],"sourceRoot":""}
