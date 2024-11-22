@@ -16,6 +16,10 @@
             "heading": "Datenschutzrichtlinie",
             "body": "Diese Website erhebt keine personenbezogenen Daten von Besuchern, es sei denn, sie werden ausdrücklich durch Kontaktformulare oder andere Mittel bereitgestellt. Alle bereitgestellten persönlichen Informationen werden ausschließlich für den Zweck der Beantwortung von Anfragen oder der Bereitstellung angeforderter Dienstleistungen verwendet und ohne Zustimmung nicht an Dritte weitergegeben."
         },
-        "navigation": "zurück zur Startseite"
+        "navigation": "zurück zur Startseite",
+        "languageButtonAriaLabel":{
+            "eng": "Switch to English",
+            "de": "Switch to German"
+        }
     }
 }

@@ -1,32 +1,38 @@
 import styled from "styled-components";
 
-const PageContainer = styled.div<{
+const PageContainer = styled.main<{
   $centeredVertically?: boolean;
   $centeredHorizontally?: boolean;
-}>` 
+  $height?: number;
+}>`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: ${({ $height }) => ($height ? `${$height}px` : "80vh")};
   height: 100%;
   width: 100vw;
   overflow: hidden;
-  padding: ${(props) => props.$centeredHorizontally ? "0" : "2rem"}; 
-  justify-content: ${(props) => props.$centeredHorizontally ? "center" : "start"}; 
-  align-items: ${(props) => (props.$centeredVertically ? "center" : "start")};
+  padding: ${({ $centeredHorizontally }) => $centeredHorizontally ? "0" : "2rem"};
+  justify-content: ${({ $centeredHorizontally }) => $centeredHorizontally ? "center" : "flex-start"};
+  align-items: ${({ $centeredVertically }) => $centeredVertically ? "center" : "flex-start"};
   gap: 1rem;
 
-  a {
-    text-decoration: none; 
+  a,
+  button {
+    text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
     cursor: pointer;
     margin-bottom: 10px;
-    transition: 0.5s;
+    transition: transform 0.3s ease;
+    transform-origin: center;
 
-    &: hover {
+    &:hover {
       transform: scale(1.1);
-      transition: 0.5s;
     }
+  }
+
+  .linkToLegalPage {
+    font-size: 0.6rem;
   }
 `;
 

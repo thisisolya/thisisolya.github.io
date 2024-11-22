@@ -11,35 +11,41 @@ const ContactsContainer = styled.ul`
 const IconWrapper = styled.li`
   margin: 0;
   padding: 0;
-  transition: 0.5s;
-  
+  transition: 0.3s;
+
   &: hover {
     transform: scale(1.5);
-    transition: 0.5s;
+    transition: 0.3s ease;
   }
 `;
 
-const iconStyles = {
-  height: "1.25rem",
-  margin: "0.75rem",
-  color: "white",
-};
+const StyledIcon = styled.span`
+  display: inline-block;
+  height: 1.25rem;
+  margin: 0.75rem;
+  color: white;
+`;
 
 const contactData = [
-  { icon: Linkedin, link: process.env.REACT_APP_LINKEDIN_PROFILE },
-  { icon: CV, link: process.env.REACT_APP_CV_LINK },
-  { icon: Mail, link: process.env.REACT_APP_EMAIL_ADDRESS },
-  { icon: GitHub, link: process.env.REACT_APP_GITHUB_PROFILE },
+  { icon: Linkedin, link: process.env.REACT_APP_LINKEDIN_PROFILE, label: "LinkedIn" },
+  { icon: CV, link: process.env.REACT_APP_CV_LINK, label: "CV" },
+  { icon: Mail, link: process.env.REACT_APP_EMAIL_ADDRESS, label: "Email" },
+  { icon: GitHub, link: process.env.REACT_APP_GITHUB_PROFILE, label: "GitHub" },
 ];
 
 function ContactInfo(): React.ReactElement {
   return (
     <nav>
       <ContactsContainer>
-        {contactData.map((item) => (
-          <IconWrapper key={item.link}>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <item.icon style={iconStyles} />
+        {contactData.map((item: (typeof contactData)[0]) => (
+          <IconWrapper key={item.label}>
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={item.label}
+            >
+              <StyledIcon as={item.icon} />
             </a>
           </IconWrapper>
         ))}

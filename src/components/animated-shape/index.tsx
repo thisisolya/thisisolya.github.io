@@ -8,9 +8,11 @@ import Knot from "./knot";
 
 const ShapeContainer = styled.div`
   align-items: center;
-  flex: 1;
+  width: 100%;
+
   canvas {
-    height: 60vh;
+    height: 100%;
+    min-height: 55vh;
     width: 100%;
   }
 `;
@@ -28,7 +30,7 @@ declare global {
   }
 }
 
-const AnimatedShape: React.FC = () => {
+function AnimatedShape(): React.ReactElement {
   return (
     <ShapeContainer>
       <Canvas camera={{ position: [1, 5, 1], fov: 70 }}>
@@ -38,6 +40,6 @@ const AnimatedShape: React.FC = () => {
       </Canvas>
     </ShapeContainer>
   );
-};
+}
 
 export default AnimatedShape;

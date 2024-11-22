@@ -1,44 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import { Home } from "react-feather";
-import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import languagesList from "../../utils/languages-list"; 
+import languagesList from "../../utils/languages-list";
 import PageContainer from "../../components/page-container";
-
-
-const Navigation = styled(NavLink)`
-  display: flex;
-  gap: 0.5rem;
-  align-items: end;
-  margin-top: 1rem; 
-`;
+import { NavLink } from "react-router-dom";
+import MulticoloredText from "../../components/multicolored-text";
 
 const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: flex-end;
-  gap: 1rem;
-  gap: 4px;
 `;
 
-const Button = styled.button.attrs({ type: "button" })<{ $isActive?: boolean }>`
+const LanguageButton = styled.button.attrs({ type: "button" })`
   padding: 0.5rem;
   border: none;
-  font-weight: ${(props) => (props.$isActive ? "bold" : "normal")};
-  text-decoration: ${(props) => (props.$isActive ? "underline" : "none")};
+  font-size: bold;
   cursor: pointer;
-  transition: 0.5s;
-
-  &: hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-  }
 `;
 
-function Legal() {
-  const [currentLanguage, setCurrentLanguage] = React.useState(
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0.5rem;
+`;
+
+function Legal(): React.ReactElement {
+  const [currentLanguage, setCurrentLanguage] = React.useState<string>(
     languagesList[0]
   );
   const { t, i18n } = useTranslation();
@@ -52,43 +41,51 @@ function Legal() {
     <PageContainer>
       <ButtonsContainer>
         {languagesList.map((language) => (
-          <Button
-            $isActive={language === currentLanguage}
+          <LanguageButton
+            key={language}
             onClick={() => setCurrentLanguage(language)}
+            aria-label={t(`legal.languageButtonAriaLabel.${language}`)}
           >
-            {language}
-          </Button>
+            {language === currentLanguage
+              ? <MulticoloredText>{language}</MulticoloredText>
+              :  language
+            }
+          </LanguageButton>
         ))}
       </ButtonsContainer>
 
-      <>
+      <TextContainer>
         <h1>{t("legal.heading")}</h1>
-        <div>
+
+        <section>
           <h2>Olga Pinchuk</h2>
           <h3>{t("legal.contactInfo.heading")}</h3>
           <p>
-            +4915752939227
+            <a href="tel:+4915752939227">+4915752939227</a>
             <br />
-            olyapinch@gmail.com
+            <a href="mailto:olyapinch@gmail.com">olyapinch@gmail.com</a>
           </p>
-        </div>
-        <div>
+        </section>
+
+        <section>
           <h3>{t("legal.disclaimer.heading")}</h3>
           <p>{t("legal.disclaimer.body")}</p>
-        </div>
-        <div>
+        </section>
+
+        <section>
           <h3>{t("legal.copyrightNotice.heading")}</h3>
           <p>{t("legal.copyrightNotice.body")}</p>
-        </div>
-        <div>
+        </section>
+
+        <section>
           <h3>{t("legal.dataProtection.heading")}</h3>
           <p>{t("legal.dataProtection.body")}</p>
-        </div>
-        <Navigation to="/">
-          <Home />
-          {t("legal.navigation")}
-        </Navigation>
-      </>
+        </section>
+
+        <NavLink to="/">
+          <MulticoloredText>{t("legal.navigation")}</MulticoloredText>
+        </NavLink>
+      </TextContainer>
     </PageContainer>
   );
 }

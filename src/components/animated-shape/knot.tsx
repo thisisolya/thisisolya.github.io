@@ -2,7 +2,7 @@ import React from "react";
 import { BufferGeometry, Material, Mesh } from "three";
 import { useFrame } from "@react-three/fiber";
 
-function Knot() {
+function Knot(): React.ReactElement {
   const mesh = React.useRef<Mesh<BufferGeometry, Material | Material[]>>(null);
 
   useFrame(() => {

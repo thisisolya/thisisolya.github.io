@@ -16,6 +16,10 @@
             "heading": "Data Protection and Privacy Policy",
             "body": "This website does not collect any personal data from visitors unless explicitly provided through contact forms or other means. Any personal information provided will be used solely for the purpose of responding to inquiries or providing requested services and will not be shared with third parties without consent."
         },
-        "navigation": "back to homepage"
+        "navigation": "back to homepage",
+        "languageButtonAriaLabel":{
+            "eng": "Switch to English",
+            "de": "Switch to German"
+        }
     }
 }
