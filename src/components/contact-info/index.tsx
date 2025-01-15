@@ -27,10 +27,10 @@ const StyledIcon = styled.span`
 `;
 
 const contactData = [
-  { icon: Linkedin, link: process.env.REACT_APP_LINKEDIN_PROFILE, label: "LinkedIn" },
-  { icon: CV, link: process.env.REACT_APP_CV_LINK, label: "CV" },
-  { icon: Mail, link: process.env.REACT_APP_EMAIL_ADDRESS, label: "Email" },
-  { icon: GitHub, link: process.env.REACT_APP_GITHUB_PROFILE, label: "GitHub" },
+  { icon: Linkedin, link: 'https://www.linkedin.com/in/olga-pinchuk', label: "LinkedIn" },
+  { icon: CV, link: 'https://shorturl.at/51CeU', label: "CV" },
+  { icon: Mail, link: 'mailto:olyapinch@gmail.com', label: "Email" },
+  { icon: GitHub, link: 'https://github.com/thisisolya', label: "GitHub" },
 ];
 
 function ContactInfo(): React.ReactElement {
